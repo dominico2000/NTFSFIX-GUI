@@ -6,13 +6,13 @@
         <option name="appClass" value="ntfsfixgui.Main" />
         <option name="description" value="" />
         <option name="htmlPlaceholderId" value="" />
-        <option name="title" value="" />
-        <option name="vendor" value="" />
-        <option name="version" value="" />
+        <option name="title" value="NTFSFIX-GUI" />
+        <option name="vendor" value="dominico2000" />
+        <option name="version" value="1.0.0" />
       </options>
     </properties>
     <root id="root">
-      <element id="archive" name="JavaFXApp.jar">
+      <element id="archive" name="NTFSFIX-GUI.jar">
         <element id="module-output" name="ntfsfix-gui" />
       </element>
     </root>

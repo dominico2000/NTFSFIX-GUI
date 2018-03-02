@@ -40,8 +40,8 @@ public class Controller {
         String params = new String();
         String diskPath = disksComboBox.getSelectionModel().getSelectedItem().toString();
 
-        //repairButton.setDisable( true );
-        //refreshButton.setDisable( true );
+        repairButton.setDisable( true );
+        refreshButton.setDisable( true );
 
         if( clearBadSectorsCheckBox.isSelected() ) params += "-b ";
         if( clearVolumeDirtyFlagCheckBox.isSelected() ) params += "-d ";
