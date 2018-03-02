@@ -12,7 +12,7 @@
       </options>
     </properties>
     <root id="root">
-      <element id="archive" name="NTFSFIX-GUI.jar">
+      <element id="archive" name="ntfsfix-gui.jar">
         <element id="module-output" name="ntfsfix-gui" />
       </element>
     </root>

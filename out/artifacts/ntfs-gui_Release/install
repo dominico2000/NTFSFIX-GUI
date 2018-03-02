@@ -1,0 +1,26 @@
+#!/bin/bash
+
+rm -R /opt/ntfsfix-gui || :
+
+mkdir /opt/ntfsfix-gui
+cp ./ntfsfix-gui_kdesu /opt/ntfsfix-gui
+cp ./ntfsfix-gui_gksudo /opt/ntfsfix-gui
+cp ./ntfsfix-gui.jar /opt/ntfsfix-gui
+cp ./ntfsfix-gui.png /opt/ntfsfix-gui
+
+echo "Choose your graphical root provider:"
+echo "1 gksudo"
+echo "2 kdesu"
+
+read -p "$ " -n 1 input 
+
+rm /usr/bin/ntfsfix-gui || :
+
+if [ $input == "1" ]; then
+    ln -s /opt/ntfsfix-gui/ntfsfix-gui_gksudo /usr/bin/ntfsfix-gui
+elif [ $input == "2" ]; then
+    ln -s /opt/ntfsfix-gui/ntfsfix-gui_kdesu /usr/bin/ntfsfix-gui
+else
+    echo "Failed"
+    exit 1
+fi

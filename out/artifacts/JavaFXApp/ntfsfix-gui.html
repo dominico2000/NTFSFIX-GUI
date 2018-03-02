@@ -3,7 +3,7 @@
 <script>
     function launchApplication(jnlpfile) {
         dtjava.launch(            {
-                url : 'NTFSFIX-GUI.jnlp'
+                url : 'ntfsfix-gui.jnlp'
             },
             {
                 javafx : '8.0+'
@@ -15,11 +15,11 @@
 </script>
 
 <script>
-    function javafxEmbedNTFSFIX-GUI_id() {
+    function javafxEmbedntfsfix-gui_id() {
         dtjava.embed(
             {
-                id : 'NTFSFIX-GUI_id',
-                url : 'NTFSFIX-GUI.jnlp',
+                id : 'ntfsfix-gui_id',
+                url : 'ntfsfix-gui.jnlp',
                 placeholder : 'javafx-app-placeholder',
                 width : '600',
                 height : '400'
@@ -31,12 +31,12 @@
         );
     }
     <!-- Embed FX application into web page once page is loaded -->
-    dtjava.addOnloadCallback(javafxEmbedNTFSFIX-GUI_id);
+    dtjava.addOnloadCallback(javafxEmbedntfsfix-gui_id);
 </script>
 
 </head><body>
 <h2>Test page for <b>JavaFXApp</b></h2>
-  <b>Webstart:</b> <a href='NTFSFIX-GUI.jnlp' onclick="return launchApplication('NTFSFIX-GUI.jnlp');">click to launch this app as webstart</a><br><hr><br>
+  <b>Webstart:</b> <a href='ntfsfix-gui.jnlp' onclick="return launchApplication('ntfsfix-gui.jnlp');">click to launch this app as webstart</a><br><hr><br>
 
   <!-- Applet will be inserted here -->
   <div id='javafx-app-placeholder'></div>
