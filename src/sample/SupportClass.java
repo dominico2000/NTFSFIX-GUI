@@ -1,5 +1,10 @@
 package sample;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -33,5 +38,14 @@ public class SupportClass {
         }
 
         return drives;
+    }
+
+    public static void refreshDisksComboBox(ComboBox disksComboBox, Button refreshButton ) throws IOException {
+
+        refreshButton.setDisable( true );
+        ArrayList<String> disksList = SupportClass.getDrives();
+        ObservableList<String> disksObservableList = FXCollections.observableArrayList(disksList);
+        disksComboBox.setItems(disksObservableList);
+        refreshButton.setDisable( false );
     }
 }
