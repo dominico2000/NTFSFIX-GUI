@@ -1,4 +1,4 @@
-package sample;
+package ntfsfixgui;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

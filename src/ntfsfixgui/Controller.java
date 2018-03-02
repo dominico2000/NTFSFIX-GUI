@@ -1,4 +1,4 @@
-package sample;
+package ntfsfixgui;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -23,7 +23,7 @@ public class Controller {
     }
 
     @FXML
-    public void refreshButtonClick(ActionEvent actionEvent) throws IOException {
+    public void onRefreshButtonClick(ActionEvent actionEvent) throws IOException {
 
         SupportClass.refreshDisksComboBox( disksComboBox, refreshButton);
     }
