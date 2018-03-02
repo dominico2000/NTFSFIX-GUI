@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -19,6 +20,13 @@ public class Controller {
         SupportClass.refreshDisksComboBox( disksComboBox, refreshButton );
 
     }
+
+    @FXML
+    public void refreshButtonClick(ActionEvent actionEvent) throws IOException {
+
+        SupportClass.refreshDisksComboBox( disksComboBox, refreshButton);
+    }
+    
 
 }
 
